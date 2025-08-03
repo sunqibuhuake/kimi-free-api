@@ -823,6 +823,7 @@ function checkResult(result: AxiosResponse, refreshToken: string) {
   }
   if (!result.data)
     return null;
+  console.log('====>', result.data);
   const { error_type, message } = result.data;
   if (!_.isString(error_type))
     return result.data;

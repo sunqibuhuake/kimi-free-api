@@ -27,9 +27,10 @@ export class ServiceConfig {
 
     constructor(options?: any) {
         const { name, host, port, urlPrefix, bindAddress } = options || {};
-        this.name = _.defaultTo(name, 'kimi-free-api');
+        this.name = _.defaultTo(name, 'k2');
         this.host = _.defaultTo(host, '0.0.0.0');
-        this.port = _.defaultTo(port, 5566);
+        // this.port = _.defaultTo(port, 5566);
+        this.port = 5777
         this.urlPrefix = _.defaultTo(urlPrefix, '');
         this.bindAddress = bindAddress;
     }
